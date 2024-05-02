@@ -1,0 +1,9 @@
+- title: Email
+  url: mailto://emwjd997@gmail.com
+  icon: fas fa-envelope
+#- title: Twitter
+#  url: https://twitter.com/vszhub
+#  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/yoon0722
+  icon: fab fa-github
