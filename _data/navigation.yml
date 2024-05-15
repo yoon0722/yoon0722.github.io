@@ -1,4 +1,8 @@
-- title: Blog
-  url: /
+- title: Home
+  url: /home/
 - title: About
   url: /about/
+- title: Study
+  url: /study/
+- title: Tags
+  url: /tags/

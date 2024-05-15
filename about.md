@@ -3,6 +3,5 @@ layout: page
 title: About
 ---
 
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
-
-For more information about Not Pure Poole, please browse the [README](https://github.com/vszhub/not-pure-poole) file.
+### Publications
+1. PhishinWebView: Analysis of Anti-Phishing Entities in Mobile Apps with WebView Targeted Phishing.<br/>WWW '24: Proceedings of the ACM on Web Conference 2024
