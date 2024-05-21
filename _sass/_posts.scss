@@ -11,7 +11,9 @@
 .page,
 .post {
   font-family: var(--text-font);
+  font-size: 17px;
   margin-bottom: 4em;
+  
 
   h1, h2, h3, h4, h5, h6, .post-meta {
     font-family: var(--body-font);
@@ -26,6 +28,7 @@
 .page-title,
 .post-title {
   color: var(--heading-color);
+  font-size: 24px;
 }
 .page-title,
 .post-title {
@@ -91,6 +94,7 @@
   padding: var(--spacer) 0;
   color: var(--gray-600);
   font-family: var(--body-font);
+  
 }
 
 .post-tags-icon {
@@ -115,14 +119,14 @@
       &:hover,
       &:focus {
         color: var(--body-bg);
-        background-color: var(--link-hover-color);
+        //background-color: rgba(255, 255, 255, 0.3);
       }
     }
   }
 }
 
 .post-tag {
-  padding: .1em .5em;
-  border: 1px solid var(--border-color);
-  border-radius: .5em;
+  //padding: .1em .5em;
+  //border: 1px solid var(--border-color);
+  //border-radius: .5em;
 }

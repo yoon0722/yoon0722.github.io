@@ -13,17 +13,19 @@
 
 .home-header-menu {
   a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    font-size: 90%;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 
     &:hover,
     &:focus {
       color: inherit;
       background-color: inherit;
-      border-bottom-color: var(--link-color);
+      border-bottom-color: DarkGray ;
     }
   }
 
   .current-item {
-    border-bottom-color: var(--link-color);
+    border-bottom-color: DarkGray ;
   }
 }

@@ -68,3 +68,10 @@ mark {
   background-color: var(--yellow-100);
   border-radius: .125rem;
 }
+
+.origin{
+  color: inherit;
+  &:hover,
+  &:focus{opacity:0.7;
+    color: inherit;}
+}

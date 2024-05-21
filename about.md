@@ -1,6 +1,8 @@
 ---
 layout: page
+permalink: /about/
 title: About
+type: about
 ---
 
 ### Publications

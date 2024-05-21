@@ -1,10 +1,23 @@
 // Archive
 //
 // Styles for archive pages.
+.tax_title{
+  font-size: 28px;
+}
+
+.post_title{
+  font-size: 17px;
+  color: inherit;
+  font-weight: 550;
+  &:hover,
+  &:focus{opacity:0.7;
+    color: inherit;}
+}
 
 .taxonomies-wrapper {
   margin-top: var(--spacer-2);
   margin-bottom: var(--spacer-2);
+  font-size: 17px;
 }
 
 .taxonomies {
@@ -24,21 +37,29 @@
     text-decoration: none;
     border-bottom: 1px solid;
     margin-bottom: var(--spacer);
+    &:hover,
+    &:focus{opacity:0.7;
+      color: inherit;}
   }
 }
 
 .post-list-by-taxonomy {
   time {
+    font-size: 17px;
     font-family: var(--code-font);
   }
 }
 
 .back-to-top {
+  color: inherit;
   display: block;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-transform: uppercase;
   text-align: right;
   text-decoration: none;
+  &:hover,
+  &:focus{opacity:0.7;
+    color: inherit;}
 }
 
 @media (max-width: $sm-width) {

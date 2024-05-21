@@ -1,8 +1,13 @@
-- title: Home
-  url: /home/
-- title: About
-  url: /about/
 - title: Study
-  url: /study/
-- title: Tags
-  url: /tags/
+#  url: /study/
+  subnav:
+    - title: Project
+      url: /categories/project/
+    - title: Coding Challenge
+      url: /categories/coding_challenge/
+    - title: CS
+      url: /categories/cs/
+    - title: C++ 
+      url: /categories/cpp/
+    - title: Python 
+      url: /categories/python/
