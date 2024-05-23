@@ -10,13 +10,14 @@
 
 .page,
 .post {
-  font-family: var(--text-font);
+  font-family: Roboto;
   font-size: 17px;
+  font-weight: 500;
   margin-bottom: 4em;
   
 
   h1, h2, h3, h4, h5, h6, .post-meta {
-    font-family: var(--body-font);
+    font-family: Roboto;
   }
 
   li + li {
@@ -29,6 +30,7 @@
 .post-title {
   color: var(--heading-color);
   font-size: 24px;
+  font-family: Roboto;
 }
 .page-title,
 .post-title {

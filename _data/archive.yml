@@ -1,12 +1,12 @@
 - type: dates
   title: Home
   url: /home/
-- type: about
-  title: About
-  url: /about/
 - type: categories
   title: Categories
   url: /categories/
+- type: about
+  title: About
+  url: /about/
 #- type: tags
 #  title: Tags
 #  url: /tags/

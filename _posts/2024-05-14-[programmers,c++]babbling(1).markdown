@@ -18,7 +18,50 @@ tags: ["cpp", "lv0"]
 |["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]|3|
 
 ### 내 코드
-<script src="https://gist.github.com/yoon0722/85fbe9421562363345d676d73a17a8b0.js"></script>
+<!-- <script src="https://gist.github.com/yoon0722/85fbe9421562363345d676d73a17a8b0.js"></script> -->
+```c++
+#include <string>
+#include <vector>
+#include <iostream>
+using namespace std;
+
+int solution(vector<string> babbling) {
+    int answer = 0;
+    vector<string> speak = {"aya", "ye", "woo", "ma"}; //가능한 발음
+    
+    for(string bab:babbling){ //babbling 배열에서 하나씩 불러오기
+        vector<bool> babbool(bab.size(), false); //bab의 size만큼 false 생성
+        
+        for(int i=0; i<speak.size(); i++){ //speak 배열에서 하나씩 불러오기
+            if(bab.find(speak[i]) != string::npos){ //babbling에 가능한 발음 있으면
+                int startpos = bab.find(speak[i]); //가능한 발음 시작위치
+                int speak_size = speak[i].size(); //speak 크기
+                
+                for(int j=startpos; j<startpos+speak_size; j++){
+                    if(babbool[j]==false){
+                        babbool[j]=true; //babbling에서 가능한 발음 true로 전환
+                    }
+                    else if(babbool[j]==true){
+                        babbool[j]=false;
+                    }
+                }                
+            }
+        }
+        bool all_true=true; //모든 요소가 true인지 확인하기 위한 변수 초기화
+        
+        for(bool b: babbool){ 
+            if(b==0){ //c++에서 true=1, false=0으로 출력
+                all_true=false;
+                break;
+            }
+        }
+        if(all_true){ //모든 요소가 true이면
+            answer++;
+        }
+    }
+    return answer;
+}
+```
 
 ---
 ### 공부한 내용
