@@ -45,7 +45,7 @@ for(int i=0; i=N; i++){
 
 ---
 
-### [백준 10818번] 최소, 최대 문제
+### [백준 10818번] 최소, 최대
 ```c++
 #include <iostream>
 #include <vector>
