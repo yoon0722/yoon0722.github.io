@@ -19,17 +19,9 @@
   <nav class="navigation">
     <ul class="navigation-list">
     {%- for nav in site.data.navigation -%}
-    <h3 class="navigation-item">{{ nav.title }}</h3>
-      <!-- <li class="navigation-item"> -->
-        <!-- <a href="{{ nav.url }}">{{ nav.title }}</a> -->
-        <!-- <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a> -->
-        {% for subnav in nav.subnav %}
-        <li class="subnavigation-item"> 
-          <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="{{ subnav.url | relative_url }}">{{ subnav.title | escape }}</a> 
-        </li>
-        <!--<li><a href="{{ subnav.url }}">{{ subnav.title }}</a></li>-->
-        {% endfor %} 
-      <!-- </li> -->
+       <li class="navigation-item"> 
+         <a onclick="sessionStorage.setItem('forceCheckScroll', 'true')" href="{{ nav.url | relative_url }}">{{ nav.title | escape }}</a> 
+       </li> 
     {%- endfor -%}
     </ul>
   </nav>
