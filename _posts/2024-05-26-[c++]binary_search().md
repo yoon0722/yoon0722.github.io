@@ -8,7 +8,7 @@ tags: ["cpp", "백준"]
 ---
 
 ### binary_search(vector_begin, vector_end, find_value)
-- <algorithm> 헤더에 정의되어 있다.
+- `<algorithm>` 헤더에 정의되어 있다.
 - 데이터가 정렬 sort() 되어 있다는 가정하게 사용가능하다.
 - vector_begin은 시작주소, vector_end는 끝주소, find_value는 찾고자 하는 값이다.
 - bool type으로 find_value가 있으면 true(1), 없으면 false(0)을 반환한다.

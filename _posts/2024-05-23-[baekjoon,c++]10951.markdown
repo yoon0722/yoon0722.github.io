@@ -1,10 +1,10 @@
 ﻿---
 layout: post
-title:  "[백준/C++] 10951번 A+B-4, EOF(End Of File)"
+title:  "[백준/C++] 10951번 A+B-4 - EOF(End Of File)"
 date:   "2024-05-14 00:00:00 +0900"
 #last_modified_at: "2024-05-03 00:00:00 +0900"
 categories: ["백준"]
-tags: ["cpp", "브론즈V"]
+tags: ["cpp", "브론즈5"]
 ---
 
 ### 문제 설명
@@ -45,6 +45,8 @@ int main() {
     }
 
     return 0;
+
+    // 결과: 출력 초과
 }
 ```
 
@@ -52,7 +54,7 @@ int main() {
 <br/>역시나 결과는 "출력초과".
 <br/>검색해보니 EOF(End OF File)을 이용해서 문제를 풀어야한다고 나온다.
 
-### 1. EOF(End OF File)
+### EOF(End OF File)
 파일의 끝을 나타내는 표시로, 일반적으로 입력 스트림의 끝을 나타낸다.
 <br/>C++에서는 'cin'을 사용하여 입력을 받을 때 EOF를 처리 할 수 있다.
 <br/>사용자 입력으로 유닉스/리눅스에서는 'Ctrl+D', 윈도우에서는 'Ctrl+Z'를 사용하여 입력의 끝을 표시한다.
