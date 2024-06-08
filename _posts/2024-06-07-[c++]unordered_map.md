@@ -15,6 +15,7 @@ tags: ["cpp"]
 ---
 
 ### map VS unordered_map
+
 #### map
 - 이진 검색 트리로 구현된다.
 - 키가 항상 정렬된 순서로 저장된다.
@@ -46,6 +47,8 @@ Key: 3, Value: Three
 
 ```
 
+---
+
 #### unordered_map
 - 해시 테이블로 구현된다.
 - 키의 순서가 보장되지 않는다.
@@ -70,7 +73,27 @@ int main() {
 
     return 0;
 }
+
+/// 출력값 
+Key: 3, Value: Three
+Key: 2, Value: Two
+Key: 1, Value: One
+
+/// 또는
+Key: 1, Value: One
+Key: 3, Value: Three
+Key: 2, Value: Two
+
+/// 또는
+Key: 2, Value: Two
+Key: 1, Value: One
+Key: 3, Value: Three
+
+//...
+
 ```
+내부적으로 해시 테이블을 사용하므로, 요소의 순서는 저장된 순서와 다를 수 있으며 예측할 수 없다.
+<br/> 순서가 보장되지 않기 때문에 실행할 때마다 결과가 다를 수 있다.
 
 ### [백준 1157번] 단어 공부
 ```c++
