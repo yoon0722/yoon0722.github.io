@@ -1,20 +1,21 @@
 ﻿---
 layout: post
-title:  "[C++] unordered_map<>"
+title:  "[C++] unordered_map"
 date:   "2024-06-08 00:00:00 +0900"
 #last_modified_at: "2024-05-03 00:00:00 +0900"
 categories: ["C++"]
 tags: ["cpp"]
 ---
 
-### unordered_map<int, int> map;
+### unordered_map
 - `<unordered_map>`헤더에 정의되어 있다.
+- unordered_map<int, string> myMap와 같은 형식으로 사용한다.
 - 해시 테이블을 기반으로 하는 연관 컨테이너이다.
 - 평균 시간 복잡도는 O(1)이다.
 
 ---
 
-### map VS unordered_map
+### map vs unordered_map
 
 #### map
 - 이진 검색 트리로 구현된다.
@@ -57,7 +58,7 @@ Key: 3, Value: Three
 - 평균적으로 삽입, 삭제, 검색 연산의 시간 복잡도는 O(1)이다.
 - 순서가 중요하지 않고, 빠른 검색과 삽입이 중요한 경우 적합하다.
 
-#### 예시
+#### 예시 1
 ```c++
 #include <iostream>
 #include <unordered_map>
@@ -98,7 +99,7 @@ Key: 3, Value: Three
 내부적으로 해시 테이블을 사용하므로, 요소의 순서는 저장된 순서와 다를 수 있으며 예측할 수 없다.
 <br/> 순서가 보장되지 않기 때문에 실행할 때마다 결과가 다를 수 있다.
 
-#### 삽입, 삭제 예시
+#### 예시 2 - 삽입, 삭제
 ```c++
 #include <iostream>
 #include <unordered_map>
