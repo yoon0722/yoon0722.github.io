@@ -147,21 +147,19 @@ int main(){
 ### 공부한 내용
 ### stringstream
 - `<sstream>`헤더에 정의되어 있다.
-- 특정 위치에 있는 부분 문자열을 다른 문자열로 대체한다.
+- 문자열을 입력받고, 이를 공백이나 다른 구분자를 기준으로 토큰으로 분할하여 데이터를 추출할 수 있다.
 
 ### 예시
 ```c++
-string str = "Hello, World!";
-string toReplace = "World";
-string replacement = "C++";
+string input = "Hello, World! My name is Tom.";
 
-int pos = str.find(toReplace); // World의 시작 위치 7 반환 
-if(pos != string::npos){
-    str.replace(pos, toReplace.length(), replacement);
+stringstream ss(input);
+string temp;
+while(ss>>temp){
+    cout << temp << endl; // "Hello," "World!" "My" "name" "is" "Tom."
 }
-
-cout << str << endl; // "Hello, C++!"
 ```
+![Image Alt 텍스트](/assets/img/result.jpg)
 
 ---
 
