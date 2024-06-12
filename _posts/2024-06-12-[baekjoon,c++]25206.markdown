@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "[백준/C++] 25206번 너의 평점은"
+title:  "[백준/C++] 25206번 너의 평점은 - stringstream"
 date:   "2024-06-12 00:00:00 +0900"
 #last_modified_at: "2024-05-03 00:00:00 +0900"
 categories: ["백준"]
@@ -124,7 +124,7 @@ int main(){
         stringstream ss(input); //stringstream 객체로 초기화
         string temp;
         while(ss>>temp){ //ss에서 공백을 기준으로 단어 추출 후 벡터에 저장
-            score.push_back(temp);
+            score.push_back(temp); //temp=DataStructure, temp=4.0, temp=A+
         }
 
         auto it = orderedMap.find(score[2]);
@@ -147,26 +147,56 @@ int main(){
 ### 공부한 내용
 ### stringstream
 - `<sstream>`헤더에 정의되어 있다.
-- 문자열을 입력받고, 이를 공백이나 다른 구분자를 기준으로 토큰으로 분할하여 데이터를 추출할 수 있다.
+- 문자열을 입력받아 데이터를 추출, 추가하거나 형식을 변환할 수 있다.
+- 공백이나 다른 구분자를 기준으로 토큰으로 분할하여 데이터를 추출할 수 있다.
 
-### 예시
+### 예시1
 ```c++
 string input = "Hello, World! My name is Tom.";
 
 stringstream ss(input);
-string temp;
-while(ss>>temp){
-    cout << temp << endl; // "Hello," "World!" "My" "name" "is" "Tom."
+string token;
+while(ss>>token){
+    cout << token << endl; // "Hello," "World!" "My" "name" "is" "Tom."
 }
 ```
-![Image Alt 텍스트](/assets/img/result.jpg)
+### 예시1 출력
+![ex1_result](/assets/img/25206_ex1_result.jpg)
+
+### 예시2
+```c++
+string input = "ObjectOrientedProgramming1 3.0 A+";
+
+stringstream ss(input);
+string token;
+while(ss>>token){
+    cout << token << endl; 
+}
+```
+### 예시2 출력
+![ex1_result](/assets/img/25206_ex2_result.jpg)
+
+### 예시3 - 문자열에서 숫자 추출
+```c++
+string input = "ObjectOrientedProgramming1 3.5 A+";
+vector<string> vec;
+
+stringstream ss(input);
+string token;
+while(ss>>token){
+    vec.push_back(token);
+}
+double grade = stod(vec[1]);
+cout << grade << endl; //3.5
+```
+### 예시3 출력
+![ex1_result](/assets/img/25206_ex3_result.jpg)
 
 ---
 
 ### Review
-저번에 풀어본 [[프로그래머스/C++] 옹알이(1)]({% post_url 2024-05-14-[programmers,c++]babbling(1) %})랑 유사한것 같아서 포스팅을 참고해봤다.
-<br/>옹알이 문제처럼 bool을 사용해서 풀어보다가,
-이번 문제는 입력값이 하나씩 주어지고 목록에 없는 알파벳도 counting하기 때문에 더 간단하게 replace 함수를 사용하여 해결했다.
+최근에 정리한 [[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]map,unordered_map %})을 사용해서 문제를 풀어봤다.
 
 
-출처: 백준, https://www.acmicpc.net/problem/25206
+
+**출처:** 백준, https://www.acmicpc.net/problem/25206
