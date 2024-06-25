@@ -7,7 +7,7 @@ categories: ["Softeer"]
 tags: ["cpp", "lv1"]
 ---
 
-### 내 코드
+### 첫 풀이
 ```c++
 #include<iostream>
 #include<string>
@@ -46,9 +46,35 @@ int main(int argc, char** argv){
     return 0;
 }
 ```
+답은 맞지만 중복되고 불필요한 코드가 많은 것 같다.
+
+### 두번째 풀이
+```c++
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main(int argc, char** argv){
+    int Total=0;
+    for(int i=0; i<5; i++){
+        string time;
+        getline(cin, time);
+        string startHour = time.substr(0,2);
+        string startMinute = time.substr(3,2);
+        string endHour = time.substr(6,2);
+        string endMinute = time.substr(9,2);
+        int TotalStartMin = stoi(startHour)*60 + stoi(startMinute);
+        int TotalEndMin = stoi(endHour)*60 + stoi(endMinute);
+        Total += TotalEndMin - TotalStartMin;
+    }
+    cout << Total;
+    return 0;
+}
+```
+좀 더 단순하게 풀어봤다.
+
 ---
 
-### Review
-풀이가 그닥 마음에 들지 않는다.
 
 **출처:** Softeer, https://softeer.ai/practice/6254
