@@ -47,6 +47,7 @@ int main(int argc, char** argv){
 }
 ```
 답은 맞지만 중복되고 불필요한 코드가 많은 것 같다.
+<br/>좀 더 간단하게 풀 수 있는 방법이 있을 것 같아 다시 풀어봤다.
 
 ### 두번째 풀이
 ```c++
@@ -57,6 +58,7 @@ using namespace std;
 
 int main(int argc, char** argv){
     int Total=0;
+
     for(int i=0; i<5; i++){
         string time;
         getline(cin, time);
@@ -72,7 +74,7 @@ int main(int argc, char** argv){
     return 0;
 }
 ```
-좀 더 단순하게 풀어봤다.
+처음 풀었을 때 보다 단순하게 접근해서 풀어봤다.
 
 ---
 
