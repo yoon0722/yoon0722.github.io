@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "[백준/C++] 24266번 알고리즘 수업-알고리즘의 수행 시간 6"
+title:  "[백준/C++] 24267번 알고리즘 수업-알고리즘의 수행 시간 6"
 date:   "2024-06-26 00:00:00 +0900"
 #last_modified_at: "2024-05-03 00:00:00 +0900"
 categories: ["백준", "알고리즘"]
@@ -20,7 +20,7 @@ MenOfPassion(A[], n) {
     for i <- 1 to n - 2
         for j <- i + 1 to n - 1
             for k <- j + 1 to n
-                sum <- sum + A[i] × A[j] × A[k]; # 코드1
+                sum <- sum + A[i] × A[j] × A[k]; // 코드1
     return sum;
 }
 ```
@@ -40,27 +40,11 @@ MenOfPassion(A[], n) {
 
 ---
 
-### 첫 시도
+### 내 코드
 ```c++
 
 ```
 
 ---
-
-### 풀이
-i는 1부터 n-2까지, j는 i+1부터 n-1까지, k는 j+1부터 n까지
-<br/>n이 5라고 가정했을 때 i는 1부터 3이다.
-
-<br/>i=1일 때, j는 2부터 4까지
-<br/>j=2일 때 k=3~5
-<br/>j=3일 때 k=4~5
-<br/>j=4일 때 k=5
-
-<br/>i=2일 때, j는 3부터4까지
-<br/>j=3일 때 k=4~5
-<br/>j=4일 때 k=5
-
-<br/>i=3일 때, j는 4까지
-<br/>j=4일 때 k=5
 
 **출처:** 백준, https://www.acmicpc.net/problem/24267
