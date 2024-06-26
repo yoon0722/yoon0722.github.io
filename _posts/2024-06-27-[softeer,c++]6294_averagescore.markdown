@@ -46,7 +46,7 @@ int main(int argc, char** argv)
    return 0;
 }
 ```
-전에 공부한 [[C++] 소수점 구하기 setprecision(), fixed]({% post_url 2024-05-16-[c++]setprecision() %})이 떠올라서 사용해봤다.
+전에 공부한 [[C++] 소수점 구하기 setprecision(), fixed]({% post_url 2024-05-16-[c++]setprecision(),fixed %})이 떠올라서 사용해봤다.
 <br/>'setprecision'은 지정한 자릿수로 숫자를 표시할 때 필요한 경우 반올림도 수행한다.
 
 ---
