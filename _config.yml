@@ -47,14 +47,8 @@ sass:
 # Options
 
 # Replace this value and uncomment to enable Google Analytics tracking
-# google_analytics: UA-000000-0
-# Analytics
-analytics:
-  provider: "google-gtag" 
-  # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id: "G-SFR245MPQP"
-    anonymize_ip: # true, false (default)
+google_analytics: G-SFR245MPQP
+
 # Replace this value and uncomment to enable Disqus
 # disqus: xxxxxx
 
