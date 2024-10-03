@@ -1,14 +1,37 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #  url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Posts"
+    url: /year-archive/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "Pages"
+    url: /page-archive/
+  - title: "Collections"
+    url: /collection-archive/
+    
+docs:
+  - title: Study
+    children:
+      - title: "c++"
+        url: /categories/cpp/
+      - title: "python"
+        url: /docs/structure/
+      - title: "project"
+        url: /docs/installation/
+      - title: "github"
+        url: /docs/upgrading/
 
-
+  #- title: Customization
+  #  children:
+  #    - title: "Configuration"
+  #      url: /docs/configuration/
+  #    - title: "Navigation"
+  #      url: /docs/navigation/
+  #    - title: "UI Text"
+  #      url: /docs/ui-text/
+  #    - title: "Authors"
+  #      url: /docs/authors/
+  #    - title: "Layouts"
+  #      url: /docs/layouts/
