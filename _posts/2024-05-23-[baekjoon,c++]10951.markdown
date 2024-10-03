@@ -1,0 +1,82 @@
+﻿---
+layout: post
+title:  "[백준/C++] 10951번 A+B-4 - EOF(End Of File)"
+date:   "2024-05-14 00:00:00 +0900"
+#last_modified_at: "2024-05-03 00:00:00 +0900"
+categories: ["백준"]
+tags: ["cpp", "브론즈5"]
+---
+
+### 문제 설명
+두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+
+### 입력
+입력은 여러 개의 테스트 케이스로 이루어져 있다.
+
+각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 < A, B < 10)
+
+### 출력
+각 테스트 케이스마다 A+B를 출력한다.
+
+### 입출력 예
+
+|입력|출력|
+|---|---|
+| 1 1 | 2 |
+| 2 3 | 5 |
+| 3 4 | 7 |
+| 9 8 | 17 |
+| 5 2 | 7 |
+
+---
+### 공부한 내용 
+
+#### 첫번째 시도
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B=0;
+
+    while(true){
+        cin >> A >> B;
+        cout << A+B << endl;
+    }
+
+    return 0;
+
+    // 결과: 출력 초과
+}
+```
+
+종료조건이 없어 일단 while(true)로해서 제출했다.
+<br/>역시나 결과는 "출력초과".
+<br/>검색해보니 EOF(End OF File)을 이용해서 문제를 풀어야한다고 나온다.
+
+### EOF(End OF File)
+파일의 끝을 나타내는 표시로, 일반적으로 입력 스트림의 끝을 나타낸다.
+<br/>C++에서는 'cin'을 사용하여 입력을 받을 때 EOF를 처리 할 수 있다.
+<br/>사용자 입력으로 유닉스/리눅스에서는 'Ctrl+D', 윈도우에서는 'Ctrl+Z'를 사용하여 입력의 끝을 표시한다.
+
+#### 두번째 시도
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B=0;
+
+    while(true){
+        cin >> A >> B;
+        if(cin.eof()){
+            break;
+        }
+        cout << A+B << endl;
+    }
+
+    return 0;
+}
+```
+결과는 통과이다.
+<br/>파이썬에서는 try, except를 가지고 해결할 수 있다.

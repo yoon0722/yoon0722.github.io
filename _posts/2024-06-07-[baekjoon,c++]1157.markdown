@@ -1,0 +1,87 @@
+﻿---
+layout: post
+title:  "[백준/C++] 1157번 단어공부 - unordered_map, transform"
+date:   "2024-06-07 00:00:00 +0900"
+#last_modified_at: "2024-05-03 00:00:00 +0900"
+categories: ["백준"]
+tags: ["cpp", "브론즈1"]
+---
+
+### 문제 설명
+알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오. 단, 대문자와 소문자를 구분하지 않는다.
+
+### 입력
+첫째 줄에 알파벳 대소문자로 이루어진 단어가 주어진다. 주어지는 단어의 길이는 1,000,000을 넘지 않는다.
+
+### 출력
+첫째 줄에 이 단어에서 가장 많이 사용된 알파벳을 대문자로 출력한다. 단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다.
+
+### 입출력 예
+
+| 입력 | 출력 |
+| --- | --- |
+| Mississipi | ? |
+| zZa | Z |
+| z | Z |
+| baaa | A |
+
+---
+
+### 내 코드
+```c++
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <cctype>
+#include <unordered_map>
+using namespace std;
+int main(){
+    string word;
+    cin >> word;
+    vector<char> wordNum(word.length());
+    int count=0;
+
+    transform(word.begin(), word.end(), word.begin(), ::toupper);
+
+    unordered_map<char, int> frequent;
+
+    for(char c:word){
+        frequent[c]++;
+    }
+    
+    int mostUsed=0;
+    string mostChar;
+    for(auto&pair:frequent){
+        if(mostUsed<pair.second){
+            mostUsed=pair.second;
+            mostChar=pair.first;
+        }
+        else if(mostUsed==pair.second){
+            mostChar="?";
+        }
+    }
+    cout << mostChar;
+}
+```
+---
+
+### 공부한 내용
+### unordered_map
+- `<unordered_map>`헤더에 정의되어 있다.
+- 해시 테이블을 기반으로 하는 연관 컨테이너이다.
+- 평균 시간 복잡도는 O(1)이다.
+- 순서가 중요하지 않고, 빠른 검색과 삽입이 중요한 경우 적합하다.
+
+<br/>**더 자세한 설명:** [[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]map,unordered_map %})
+
+### transform(v.begin(), v.end(), new_v.begin(), ::tolower/::toupper)
+- `<algorithm>`헤더에 정의되어 있다.
+- v.begin()부터 v.end()까지의 범위에 있는 요소들에 주어진 함수를 적용시킨다.
+- new_v.begin()에 변환된 값들을 저장한다.
+
+<br/>**더 자세한 설명:** [[C++] transform 함수]({% post_url 2024-06-07-[c++]transform %})
+
+---
+
+출처: 백준, https://www.acmicpc.net/problem/1157

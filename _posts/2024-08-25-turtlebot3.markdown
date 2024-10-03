@@ -1,0 +1,15 @@
+﻿---
+layout: post
+title:  "TurtleBot3"
+date:   "2024-08-25 00:00:00 +0900"
+#last_modified_at: "2024-05-03 00:00:00 +0900"
+categories: ["turtlebot3"]
+tags: []
+---
+
+### TurtleBot이란?
+<br/>
+TurtleBot은 *ROS(Robot Operating System)라는 로봇 소프트웨어 플랫폼을 사용하여 제어되며, 1967년 교육용 프로그래밍 언어 Logo의 Turtle 로봇에서 유래했다. 
+재미있게도, ROS의 기본 튜토리얼에 등장하는 turtlesim 노드도 이 Logo 터틀 프로그램의 명령 체계를 모방한 프로그램이다. 그래서 ROS의 상징으로도 거북이 아이콘이 사용된다.
+TurtleBot은 ROS와 컴퓨터 프로그래밍 언어를 쉽게 가르치기 위해 설계되었다.
+*ROS는 로봇을 제어하고 다양한 센서나 구동 장치를 쉽게 다룰 수 있도록 도와주는 소프트웨어 프레임워크인데, TurtleBot은 그 위에서 구동되는 로봇이다.
