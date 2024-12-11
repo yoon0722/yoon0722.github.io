@@ -2,7 +2,7 @@
 title: "Posts by Python"
 layout: category
 permalink: /categories/python/
-taxonomy: python
+taxonomy: Python
 author_profile: true
 sidebar: 
     nav: docs

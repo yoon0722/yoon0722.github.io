@@ -2,7 +2,7 @@
 title: "Posts by C++"
 layout: category
 permalink: /categories/c++/
-taxonomy: c++
+taxonomy: C++
 author_profile: true
 sidebar: 
     nav: docs
