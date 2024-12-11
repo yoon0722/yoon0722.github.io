@@ -1,7 +1,8 @@
 ---
-title: "Posts by Category"
-permalink: /categories/
-layout: categories
+title: "Posts by Algorithm"
+layout: category
+permalink: /categories/algorithm/
+taxonomy: algorithm
 author_profile: true
 sidebar: 
     nav: docs
