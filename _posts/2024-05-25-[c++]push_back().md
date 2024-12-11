@@ -1,10 +1,20 @@
 ﻿---
-layout: post
-title:  "[C++] vector에서의 push_back() 함수"
-date:   "2024-05-25 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["C++"]
-tags: ["cpp", "백준"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[C++] vector에서의 push_back() 함수"
+date: "2024-05-25 00:00:00 +0900"
+last_modified_at: "2024-05-25 00:00:00 +0900"
+categories:
+  - C++
+tags:
+  - c++
+  - baekjoon
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### push_back()

@@ -1,10 +1,20 @@
 ﻿---
-layout: post
-title:  "[백준/C++] 25206번 너의 평점은 - stringstream"
-date:   "2024-06-12 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["백준"]
-tags: ["cpp", "실버5"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[Baekjoon/C++] 25206번 너의 평점은 - stringstream"
+date: "2024-06-12 00:00:00 +0900"
+last_modified_at: "2024-06-12 00:00:00 +0900"
+categories:
+  - Baekjoon
+tags:
+  - c++
+  - silver5
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### 문제 설명

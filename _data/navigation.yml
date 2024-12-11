@@ -15,12 +15,18 @@ docs:
   - title: Study
     children:
       - title: "c++"
-        url: /categories/cpp/
+        url: /categories/c++/
       - title: "python"
-        url: /docs/structure/
-      - title: "project"
-        url: /docs/installation/
+        url: /categories/python/
+      - title: "algorithm"
+        url: /categories/algorithm/
       - title: "github"
+        url: /categories/github/
+  - title: Project
+    children:
+      - title: "PhishinWebView"
+        url: /docs/installation/
+      - title: "Drone"
         url: /docs/upgrading/
 
   #- title: Customization

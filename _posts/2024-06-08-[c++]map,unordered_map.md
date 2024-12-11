@@ -1,10 +1,19 @@
 ﻿---
-layout: post
-title:  "[C++] map vs unordered_map"
-date:   "2024-06-08 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["C++"]
-tags: ["cpp"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[C++] map vs unordered_map"
+date: "2024-06-08 00:00:00 +0900"
+last_modified_at: "2024-06-08 00:00:00 +0900"
+categories:
+  - C++
+tags:
+  - c++
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### unordered_map

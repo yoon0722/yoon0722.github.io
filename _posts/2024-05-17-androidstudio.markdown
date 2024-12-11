@@ -1,10 +1,19 @@
 ﻿---
-layout: post
-title:  "Android Studio/Android SDK 설치"
-date:   "2024-05-17 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["[Project] PhishinWebView"]
-tags: []
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "Android Studio/Android SDK 설치"
+date: "2024-05-17 00:00:00 +0900"
+last_modified_at: "2024-05-17 00:00:00 +0900"
+categories:
+  - Project
+tags:
+  - android
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### Android SDK

@@ -1,10 +1,20 @@
 ﻿---
-layout: post
-title:  "[Softeer/C++] 근무 시간"
-date:   "2024-06-25 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["Softeer"]
-tags: ["cpp", "lv1"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[Softeer/C++] 근무 시간"
+date: "2024-06-25 00:00:00 +0900"
+last_modified_at: "2024-06-25 00:00:00 +0900"
+categories:
+  - Softeer
+tags:
+  - c++
+  - lv1
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### 첫 풀이

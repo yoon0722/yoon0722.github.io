@@ -1,10 +1,18 @@
 ﻿---
-layout: post
-title:  "브루트 포스(Brute Force) 알고리즘"
-date:   "2024-06-27 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["알고리즘"]
-tags: []
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "브루트 포스(Brute Force) 알고리즘"
+date: "2024-06-27 00:00:00 +0900"
+last_modified_at: "2024-06-27 00:00:00 +0900"
+categories:
+  - Algorithm
+tags:
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### 완전탐색, 브루트 포스(Brute Force) 알고리즘

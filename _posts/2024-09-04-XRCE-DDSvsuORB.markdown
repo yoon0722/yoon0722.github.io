@@ -5,6 +5,26 @@ date:   "2024-09-04 00:00:00 +0900"
 #last_modified_at: "2024-05-03 00:00:00 +0900"
 categories: ["[Project] Drone"]
 tags: ["XRCE-DDS", "uORB", "ROS2", "PX4"]
+
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "XRCE-DDS vs uORB"
+date: "2024-09-04 00:00:00 +0900"
+last_modified_at: "2024-09-04 00:00:00 +0900"
+categories:
+  - Project
+tags:
+  - XRCE-DDS
+  - uORB
+  - drone
+  - ROS2
+  - PX4
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### XRCE-DDS

@@ -1,10 +1,19 @@
 ﻿---
-layout: post
-title:  "[C++] transform 함수"
-date:   "2024-06-07 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["C++"]
-tags: ["cpp"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[C++] transform 함수"
+date: "2024-06-07 00:00:00 +0900"
+last_modified_at: "2024-06-07 00:00:00 +0900"
+categories:
+  - C++
+tags:
+  - c++
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### transform(v.begin(), v.end(), new_v.begin(), ::tolower/::toupper)

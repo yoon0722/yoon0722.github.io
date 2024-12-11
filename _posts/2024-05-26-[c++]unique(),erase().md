@@ -1,10 +1,20 @@
 ﻿---
-layout: post
-title:  "[C++] 중복원소 제거 (sort, unique, erase)"
-date:   "2024-05-26 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["C++"]
-tags: ["cpp", "백준"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[C++] 중복원소 제거 (sort, unique, erase)"
+date: "2024-05-26 00:00:00 +0900"
+last_modified_at: "2024-05-26 00:00:00 +0900"
+categories:
+  - C++
+tags:
+  - c++
+  - baekjoon
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### sort()

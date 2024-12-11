@@ -1,10 +1,20 @@
 ﻿---
-layout: post
-title:  "[프로그래머스/C++] 옹알이(1)"
-date:   "2024-05-14 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["프로그래머스"]
-tags: ["cpp", "lv0"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[programmers/C++] 옹알이(1)"
+date: "2024-05-14 00:00:00 +0900"
+last_modified_at: "2024-05-14 00:00:00 +0900"
+categories:
+  - programmers
+tags:
+  - c++
+  - lv0
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### 문제 설명

@@ -10,7 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "yoon0722"
-  avatar           : "/assets/images/pf_rome.jpg"
+  avatar           : "/assets/img/pf_rome.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
   email            :
@@ -335,6 +335,8 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: docs
   # _pages
   - scope:
       path: ""
@@ -343,14 +345,14 @@ defaults:
       layout: single
       author_profile: true
       sidebar:
-        nav: "docs"
+        nav: docs
   # _docs
   - scope:
       path: ""
       type: docs
     values:
       sidebar:
-        nav: "docs"
+        nav: docs
 defaults:
   - scope:
       path: ""

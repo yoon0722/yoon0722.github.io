@@ -3,14 +3,18 @@
 #toc: true
 #toc_label: "My Table of Contents"
 #toc_icon: "cog"
-#layout: post
-title: "[프로그래머스/C++] 동영상 재생기"
-#date: "2024-10-03 00:00:00 +0900"
+layout: single
+title: "[programmers/C++] [PCCP 기출문제] 1번 / 동영상 재생기"
+date: "2024-10-03 00:00:00 +0900"
 last_modified_at: "2024-10-03 00:00:00 +0900"
-categories: 
-    - Jekyll #["프로그래머스"]
-#tags: ["cpp", "lv0"]
-posts: 2017
+categories:
+  - programmers
+tags:
+  - c++
+  - lv1
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### 문제 설명

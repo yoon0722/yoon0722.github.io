@@ -1,10 +1,20 @@
 ﻿---
-layout: post
-title:  "[백준/C++] 10811번 바구니 뒤집기"
-date:   "2024-05-27 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["백준"]
-tags: ["cpp", "브론즈2"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[Baekjoon/C++] 10811번 바구니 뒤집기"
+date: "2024-05-27 00:00:00 +0900"
+last_modified_at: "2024-05-27 00:00:00 +0900"
+categories:
+  - Baekjoon
+tags:
+  - c++
+  - bronze2
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### 문제 설명

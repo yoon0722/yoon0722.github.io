@@ -1,10 +1,19 @@
 ﻿---
-layout: post
-title:  "[C++] 소수점 구하기 setprecision(), fixed"
-date:   "2024-05-16 00:00:00 +0900"
-#last_modified_at: "2024-05-03 00:00:00 +0900"
-categories: ["C++"]
-tags: ["cpp"]
+#classes: wide
+#toc: true
+#toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[C++] 소수점 구하기 setprecision(), fixed"
+date: "2024-05-16 00:00:00 +0900"
+last_modified_at: "2024-05-16 00:00:00 +0900"
+categories:
+  - C++
+tags:
+  - c++
+author_profile: true
+sidebar:
+    nav: docs
 ---
 
 ### setprecision()
