@@ -23,9 +23,9 @@ docs:
   - title: Project
     children:
       - title: "PhishinWebView"
-        url: /docs/installation/
+        url: /tags/phishinWebView/
       - title: "Drone"
-        url: /docs/upgrading/
+        url: /tags/drone/
 
   #- title: Customization
   #  children:
