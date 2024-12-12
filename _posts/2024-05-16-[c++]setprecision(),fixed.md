@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[C++] 소수점 구하기 setprecision(), fixed"
@@ -16,7 +16,7 @@ sidebar:
     nav: docs
 ---
 
-### setprecision()
+## setprecision()
 setprecision(n) : 정수+소수자리를 합해서 n만큼 출력된다.
 
 ```c++
@@ -35,7 +35,7 @@ int main(){
 // 출력값 : 3.1
 ```
 
-### fixed
+## fixed
 
 ```c++
 #include <iostream>

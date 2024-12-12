@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[Baekjoon/C++] 1157번 단어공부 - unordered_map, transform"
@@ -17,7 +17,7 @@ sidebar:
     nav: docs
 ---
 
-### 문제 설명
+## 문제 설명
 알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오. 단, 대문자와 소문자를 구분하지 않는다.
 
 ### 입력
@@ -35,9 +35,8 @@ sidebar:
 | z | Z |
 | baaa | A |
 
----
 
-### 내 코드
+## 코드 구현
 ```c++
 #include <iostream>
 #include <string>
@@ -74,9 +73,8 @@ int main(){
     cout << mostChar;
 }
 ```
----
 
-### 공부한 내용
+## 공부한 내용
 ### unordered_map
 - `<unordered_map>`헤더에 정의되어 있다.
 - 해시 테이블을 기반으로 하는 연관 컨테이너이다.

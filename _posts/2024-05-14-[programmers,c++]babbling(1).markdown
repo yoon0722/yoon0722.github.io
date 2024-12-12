@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[programmers/C++] 옹알이(1)"
@@ -17,7 +17,7 @@ sidebar:
     nav: docs
 ---
 
-### 문제 설명
+## 문제 설명
 머쓱이는 태어난 지 6개월 된 조카를 돌보고 있습니다. 조카는 아직 "aya", "ye", "woo", "ma" 네 가지 발음을 최대 한 번씩 사용해 조합한(이어 붙인) 발음밖에 하지 못합니다. 문자열 배열 **babbling**이 매개변수로 주어질 때, 머쓱이의 조카가 발음할 수 있는 단어의 개수를 return하도록 solution 함수를 완성해주세요.
 
 ### 입출력 예
@@ -27,7 +27,8 @@ sidebar:
 |["aya", "yee", "u", "maa", "wyeoo"]|1|
 |["ayaye", "uuuma", "ye", "yemawoo", "ayaa"]|3|
 
-### 내 코드
+
+## 코드 구현
 <!-- <script src="https://gist.github.com/yoon0722/85fbe9421562363345d676d73a17a8b0.js"></script> -->
 ```c++
 #include <string>
@@ -73,9 +74,8 @@ int solution(vector<string> babbling) {
 }
 ```
 
----
-### 공부한 내용
 
+## 공부한 내용
 ### 1. string.find() 함수
 ```c++
 #include <string>
@@ -98,8 +98,8 @@ else{
 문자열에서 특정 문자열을 찾지 못한 경우에 반환되는 특별한 상수이다.
 string::find()함수는 문자열이 존재하지 않을 때 npos를 반환한다.
 
----
-### Review
+
+## Review
 bool vector를 사용하여 해결했다.<br/>
 예를 들어 **for(string bab:babbling)**에서 **bab**이 **"ayaye"**일때, **babbool={false, false, false, false, false}**가 된다.<br/>
 **if(bab.find(speak[0]) != string::npos)**이라고 가정했을때, 

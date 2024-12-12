@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "Appium 설치"
@@ -15,10 +15,11 @@ author_profile: true
 sidebar:
     nav: docs
 ---
-### 환경
+
+## 환경
 window 11
 
-### Appium
+## Appium
 Appium은 다양한 플랫폼(모바일, 웹, 데스크톱 등)의 UI 자동화를 지원하는것을 목표로 한다.
 그쁀 아니라 다양한 언어(JS, Java, Python 등)로 작성된 자동화 코드를 지원하는 것도 목표로 한다.
 <br/>출처: https://appium.io/docs/en/2.4/intro/

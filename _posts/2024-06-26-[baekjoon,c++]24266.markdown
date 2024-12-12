@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[Baekjoon/C++] 24266번 알고리즘 수업-알고리즘의 수행 시간 5"
@@ -18,7 +18,7 @@ sidebar:
     nav: docs
 ---
  
-### 문제 설명
+## 문제 설명
 오늘도 서준이는 알고리즘의 수행시간 수업 조교를 하고 있다. 아빠가 수업한 내용을 학생들이 잘 이해했는지 문제를 통해서 확인해보자.
 
 입력의 크기 n이 주어지면 MenOfPassion 알고리즘 수행 시간을 예제 출력과 같은 방식으로 출력해보자.
@@ -49,9 +49,8 @@ MenOfPassion(A[], n) {
 
 코드1 이 343회 수행되고 알고리즘의 수행 시간이 n3에 비례한다.
 
----
 
-### 첫 시도
+## 첫번째 시도
 ```c++
 #include<iostream>
 #include<cmath>
@@ -66,7 +65,7 @@ int main(){
 답은 맞게 나오는데 틀렸다고 나온다.
 <br/>알고보니 pow의 결과값이 'double' 타입으로 처리된다고 한다.
 
-### 두번째 시도
+## 두번째 시도
 ```c++
 #include<iostream>
 using namespace std;
@@ -81,5 +80,4 @@ int main(){
 <br/>pow를 사용한것이 문제인가보다.
 
 ---
-
 **출처:** 백준, https://www.acmicpc.net/problem/24266

@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[C++] vector에서의 push_back() 함수"
@@ -17,13 +17,12 @@ sidebar:
     nav: docs
 ---
 
-### push_back()
+## push_back()
 - vector의 끝에 새로운 요소를 추가하는데 사용한다.
 
----
-### vector 초기화 문제
+## vector 초기화 문제
 
-**틀린 코드**
+**잘못된 코드**
 ```c++
 int N;
 cin >> N;
@@ -37,6 +36,7 @@ for(int i=0; i=N; i++){
 
 에러가 뜬다.
 <br/>초반에 vector를 선언해줄 때 vector의 크기를 미리 지정해주지 않으면 'push_back'함수를 사용해서 요소를 추가해 주어야 한다.
+
 
 **정정 코드**
 ```c++
@@ -53,9 +53,8 @@ for(int i=0; i=N; i++){
 ```
 이런식으로 수정해 주어야한다.
 
----
 
-### [백준 10818번] 최소, 최대
+## [백준 10818번] 최소, 최대
 ```c++
 #include <iostream>
 #include <vector>

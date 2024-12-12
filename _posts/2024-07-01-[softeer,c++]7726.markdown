@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[Softeer/C++] 나무 섭지"
@@ -17,7 +17,7 @@ sidebar:
     nav: docs
 ---
 
-### 내 코드
+## 코드 구현
 ```c++
 
 ```
@@ -26,5 +26,4 @@ BFS로 풀다가 실패했다.
 <br/>다시 돌아온다.
 
 ---
-
 **출처:** Softeer, https://softeer.ai/practice/7726

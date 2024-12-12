@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "Linux에서의 GitHub 명령어"
@@ -16,12 +16,13 @@ author_profile: true
 sidebar:
     nav: docs
 ---
-### 로컬 접속
+
+## 로컬 접속
 {% highlight text %}
 bundle exec jekyll serve
 {% endhighlight %}
 
-### 원격에 Push
+## 원격에 Push
 {% highlight text %}
 git add .
 git commit -m "your commit message"

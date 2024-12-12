@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[Baekjoon/C++] 25206번 너의 평점은 - stringstream"
@@ -17,7 +17,7 @@ sidebar:
     nav: docs
 ---
 
-### 문제 설명
+## 문제 설명
 인하대학교 컴퓨터공학과를 졸업하기 위해서는, 전공평점이 3.3 이상이거나 졸업고사를 통과해야 한다. 그런데 아뿔싸, 치훈이는 깜빡하고 졸업고사를 응시하지 않았다는 사실을 깨달았다!
 
 치훈이의 전공평점을 계산해주는 프로그램을 작성해보자.
@@ -101,9 +101,8 @@ P/F 과목의 경우 등급이 P또는 F로 표시되는데, 등급이 P인 과�
 | CentroidDecomposition 3.0 F ||
 | SplayTree 1.0 F ||
 
----
 
-### 내 코드
+## 코드 구현
 ```c++
 #include <iostream>
 #include <string>
@@ -152,15 +151,14 @@ int main(){
     cout << average/totalSub << endl;
 }
 ```
----
 
-### 공부한 내용
+## 공부한 내용
 ### stringstream
 - `<sstream>`헤더에 정의되어 있다.
 - 문자열을 입력받아 데이터를 추출, 추가하거나 형식을 변환할 수 있다.
 - 공백이나 다른 구분자를 기준으로 토큰으로 분할하여 데이터를 추출할 수 있다.
 
-### 예시1
+#### 코드 예시1
 ```c++
 string input = "Hello, World! My name is Tom.";
 
@@ -170,10 +168,10 @@ while(ss>>token){
     cout << token << endl; // "Hello," "World!" "My" "name" "is" "Tom."
 }
 ```
-### 예시1 출력
+##### 코드 예시1 출력
 ![ex1_result](/assets/img/25206_ex1_result.jpg)
 
-### 예시2
+#### 코드 예시2
 ```c++
 string input = "ObjectOrientedProgramming1 3.0 A+";
 
@@ -183,10 +181,10 @@ while(ss>>token){
     cout << token << endl; 
 }
 ```
-### 예시2 출력
+##### 코드 예시2 출력
 ![ex1_result](/assets/img/25206_ex2_result.jpg)
 
-### 예시3 - 문자열에서 숫자 추출
+#### 코드 예시3 - 문자열에서 숫자 추출
 ```c++
 string input = "ObjectOrientedProgramming1 3.5 A+";
 vector<string> vec;
@@ -199,14 +197,11 @@ while(ss>>token){
 double grade = stod(vec[1]);
 cout << grade << endl; //3.5
 ```
-### 예시3 출력
+##### 코드 예시3 출력
 ![ex1_result](/assets/img/25206_ex3_result.jpg)
 
----
-
-### Review
+## Review
 최근에 정리한 [[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]map,unordered_map %})을 사용해서 문제를 풀어봤다.
 
-
-
+---
 **출처:** 백준, https://www.acmicpc.net/problem/25206

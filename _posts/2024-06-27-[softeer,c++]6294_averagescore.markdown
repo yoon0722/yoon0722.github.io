@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[Softeer/C++] 성적 평균"
@@ -17,13 +17,13 @@ sidebar:
     nav: docs
 ---
 
-### 문제 설명
+## 문제 설명
 ![problem_ex](/assets/img/6294_1.png)
 
 ### 입출력 예시
 ![problem_ex](/assets/img/6294_2.png)
 
-### 내 코드
+## 코드 구현
 ```c++
 #include<iostream>
 #include<vector>
@@ -60,5 +60,4 @@ int main(int argc, char** argv)
 <br/>'setprecision'은 지정한 자릿수로 숫자를 표시할 때 필요한 경우 반올림도 수행한다.
 
 ---
-
 **출처:** Softeer, https://softeer.ai/practice/6294

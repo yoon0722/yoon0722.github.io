@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[C++] 중복원소 제거 (sort, unique, erase)"
@@ -17,27 +17,26 @@ sidebar:
     nav: docs
 ---
 
-### sort()
+## sort()
 - 오름차순으로 정렬해준다.
 ```c++
 sort(vector.begin(), vector.end()); //vector={1,2,3,3,4,4,4,5}
 ```
 unique() 함수를 사용하기 전에 sort()가 먼저 되어있어야 한다.
 
-### unique()
+## unique()
 - 중복되는 원소들은 맨 뒤로 배치된다.
 ```c++
 unique(vector.begin(), vector.end()); //vector={1,2,3,4,5,3,4,4}
 ```
 
-### erase()
+## erase()
 - 중복되는 원소들을 제거해준다.
 ```c++
 vector.erase(unique(vector.begin(), vector.end()), vector.end()); //vector={1,2,3,4,5}
 ```
----
 
-### [백준 3052번] 나머지
+## [백준 3052번] 나머지
 ```c++
 #include <iostream>
 #include <vector>

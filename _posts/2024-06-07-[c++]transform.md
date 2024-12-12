@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[C++] transform 함수"
@@ -16,15 +16,14 @@ sidebar:
     nav: docs
 ---
 
-### transform(v.begin(), v.end(), new_v.begin(), ::tolower/::toupper)
+## transform(v.begin(), v.end(), new_v.begin(), ::tolower/::toupper)
 - `<algorithm>`헤더에 정의되어 있다.
 - v.begin()부터 v.end()까지의 범위에 있는 요소들에 주어진 함수를 적용시킨다.
 - 세 번째 인자인 new_v.begin()에 변환된 값들을 저장한다. 이렇게 하면 원래 v벡터를 변경하지 않고도 변환된 결과를 new_v벡터에 저장할 수 있다.
 - 세 번째 인자에 v.begin()값을 그대로 사용해 줌으로써 변환된 값들을 기존의 v벡터에 덮어쓸 수 있다.
 
----
 
-### 예시 1
+## 코드 예시 1
 ```c++
 #include <iostream>
 #include <vector>
@@ -49,7 +48,7 @@ int main() {
 }
 ```
 
-### 예시 2
+## 코드 예시 2
 ```c++
     string word;
     cin >> word;

@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "AppPackage, AppActivity 확인하는 명령어"
@@ -18,7 +18,7 @@ sidebar:
     nav: docs
 ---
 
-### 현재 실행중인 앱의 AppPackage, AppActivity 확인하는 명령어
+## 현재 실행중인 앱의 AppPackage, AppActivity 확인하는 명령어
 ```c++
 adb shell dumpsys window | find "mCurrentFocus"
 ```

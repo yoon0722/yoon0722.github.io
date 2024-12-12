@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[Baekjoon/C++] 1152번 단어의 개수 - string 공백 입력 getline()"
@@ -17,7 +17,7 @@ sidebar:
     nav: docs
 ---
 
-### 문제 설명
+## 문제 설명
 영어 대소문자와 공백으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오. 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.
 
 ### 입력
@@ -34,9 +34,8 @@ sidebar:
 | _The first character is a blank | 6 |
 | The last character is a blank_ | 6 |
 
----
 
-### 내 코드
+## 코드 구현
 ```c++
 #include <iostream>
 #include <vector>
@@ -61,9 +60,8 @@ int main(){
     cout << count+1;
 }
 ```
----
 
-### 공부한 내용
+## 공부한 내용
 ### getline(cin, input)
 - `<string>` 헤더에 정의되어 있는 함수이다.
 - 입력 스트림에서 한 줄을 읽어와 문자열로 반환한다.

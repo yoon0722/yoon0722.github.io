@@ -1,5 +1,5 @@
 ﻿---
-#classes: wide
+classes: wide
 toc: true
 toc_label: "My Table of Contents"
 #toc_icon: "cog"
@@ -35,10 +35,8 @@ sidebar:
 "10:55"|"00:05"|"00:15"|"06:55"|["prev", "next", "next"]|"06:55"
 "07:22"|"04:05"|"00:15"|"04:07"|["next"]|"04:17"
 
----
 
 ## 코드 구현 1
-
 ```c++
 #include <string>
 #include <vector>
@@ -161,7 +159,6 @@ string solution(string video_len, string pos, string op_start, string op_end, ve
 일단 푸는것을 목표로 무작정 풀어봤다.
 반복되는 코드가 많아 매우 비효율적이라 생각해 이번엔 좀 더 효율적인 코드작성을 위해 다시 풀어봤다. 
 
----
 
 ## 코드 구현 2
 ```c++
@@ -233,4 +230,4 @@ string solution(string video_len, string pos, string op_start, string op_end, ve
 }
 ```
 ---
-출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+**출처:** 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges

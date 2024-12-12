@@ -1,7 +1,7 @@
 ﻿---
-#classes: wide
-#toc: true
-#toc_label: "My Table of Contents"
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
 title: "[Baekjoon/C++] 24264번 알고리즘 수업-알고리즘의 수행 시간 3"
@@ -18,7 +18,7 @@ sidebar:
     nav: docs
 ---
 
-### 문제 설명
+## 문제 설명
 오늘도 서준이는 알고리즘의 수행시간 수업 조교를 하고 있다. 아빠가 수업한 내용을 학생들이 잘 이해했는지 문제를 통해서 확인해보자.
 
 입력의 크기 n이 주어지면 MenOfPassion 알고리즘 수행 시간을 예제 출력과 같은 방식으로 출력해보자.
@@ -48,9 +48,8 @@ MenOfPassion(A[], n) {
 
 코드1 이 49회 수행되고 알고리즘의 수행 시간이 n^2에 비례한다.
 
----
 
-### 내 코드
+## 코드 구현
 ```c++
 #include<iostream>
 using namespace std;
@@ -61,11 +60,11 @@ int main(){
     cout << n*n << "\n" << "2";
 }
 ```
----
 
-### Review
+## Review
 **시간복잡도: O(n^2)**
 <br/>처음에 그냥 int n으로 풀었더니 답이 틀렸다고 나왔다.
 <br/>입력 n의 크기가 n(1 ≤ n ≤ 500,000)로 n^2를 했을때, 250,000,000,000이 되어 **int의 범위(-2,147,483,648 ~ 2,147,483,647)**를 넘어간다.
 
+---
 **출처:** 백준, https://www.acmicpc.net/problem/24264
