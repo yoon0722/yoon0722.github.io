@@ -1,0 +1,148 @@
+﻿---
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[Baekjoon/C++] 1018번 체스판 다시 칠하기"
+date: "2024-12-17 00:00:00 +0900"
+last_modified_at: "2024-12-17 00:00:00 +0900"
+categories:
+  - Baekjoon
+tags:
+  - c++
+  - silver4
+author_profile: true
+sidebar:
+    nav: docs
+---
+ 
+## 문제 설명
+![problem_ex](/assets/img/1018_1.png)
+
+### 입력
+![problem_ex](/assets/img/1018_2.png)
+
+### 출력
+![problem_ex](/assets/img/1018_3.png)
+
+### 입출력 예
+![problem_ex](/assets/img/1018_ex1.png)
+![problem_ex](/assets/img/1018_ex2.png)
+![problem_ex](/assets/img/1018_ex3.png)
+![problem_ex](/assets/img/1018_ex4.png)
+
+## 코드 구현
+```c++
+#include <iostream>
+#include <array>
+#include <string>
+using namespace std;
+
+char chess[50][50];
+int totalSmallest=-1;
+
+void chessboard(int N, int M){
+    char tempChess[8][8];
+    for(int i=0; i<8; i++){
+        for(int j=0; j<8; j++){
+            tempChess[i][j]=chess[N+i][M+j];
+        }
+    }
+
+    int count1=0; 
+    int count2=0;
+
+    for(int i=0; i<8; i++){
+        for(int j=0; j<8; j++){
+            if((i+j)%2==0){
+                if(tempChess[i][j]!='B') count1++;
+                else if(tempChess[i][j]!='W') count2++;
+            }
+            else{
+                if(tempChess[i][j]!='W') count1++;
+                else if(tempChess[i][j]!='B') count2++;
+            }
+        }
+    }
+
+    int smallest = min(count1, count2);
+
+    if(totalSmallest==-1){
+        totalSmallest=smallest;
+    }
+    else if(totalSmallest>smallest){
+        totalSmallest=smallest;
+    }
+}
+
+int main(){
+    int N=0, M=0;
+    cin >> N >> M; //8 <= N,M <=50 
+
+    for(int i=0; i<N; i++){
+        string row;
+        cin >> row;
+        for(int j=0; j<M; j++){
+            chess[i][j]=row[j];
+        }
+    }
+
+    for(int i=0; i<N-7; i++){ //(N-8+1)번
+        for(int j=0; j<M-7; j++){ //(M-8+1)번
+            chessboard(i, j);
+        }
+    }
+
+    cout << totalSmallest;
+
+    return 0;
+}
+```
+
+## Review
+```c++
+if((i+j)%2==0) //를 통해 행과열 마다의 홀짝을 구분해 주었다.
+```
+0행 BWBBBWBW
+<br/>1행 BBWBWWWB
+...
+<br/>이라고 가정했을 때
+
+**경우의 수 1**
+<br/>**<span style="color:red;">0행: BWBWBWBW</span>**
+<br/>tempChess[0][3]!=W 
+<br/>count1은 1이 된다.
+<br/>**<span style="color:red;">1행: WBWBWBWB</span>**
+**(변을 공유하는 두 개의 사각형은 다른 색으로 칠해져야 하기 때문)**
+<br/>tempChess[1][0]!=W
+<br/>tempChess[1][5]!=B
+<br/>**count1은 총 3이 된다.**
+
+**경우의 수 2**
+<br/>**<span style="color:red;">0행: WBWBWBWB</span>**
+<br/>tempChess[0][0]!=W 
+<br/>tempChess[0][1]!=B 
+<br/>tempChess[0][2]!=W 
+<br/>tempChess[0][4]!=W 
+<br/>tempChess[0][5]!=B 
+<br/>tempChess[0][6]!=W 
+<br/>tempChess[0][7]!=B 
+<br/>count2는 7이 된다.
+<br/>**<span style="color:red;">1행: BWBWBWBW</span>**
+<br/>tempChess[1][1]!=W
+<br/>tempChess[1][2]!=B
+<br/>tempChess[1][3]!=W
+<br/>tempChess[1][4]!=B
+<br/>tempChess[1][6]!=B
+<br/>tempChess[1][7]!=W
+<br/>**count2는 총 13이 된다.**
+
+이런식으로 0~7행까지 count가 쌓이게 되어 count1과 count2중에 더 작은 count(경우의 수)가 정사각형 개수의 최솟값이 된다.
+
+처음 구현했을 때 주어진 예제 입력은 다 맞게 나오는데 이상하게 계속 답이 틀렸다고 나와 한참 고민했다.
+<br/>질문 게시판에서 반례들을 찾아본 결과, **변을 공유하는 두 개의 사각형은 다른 색으로 칠해져 있어야 한다** 라는 조건을 고려하지 않아 계속 틀렸다고 나오는 것이었다.
+<br/>단순구현문젠데 어이없이 너무 오래 붙잡고 있었다.
+
+---
+**출처:** 백준, https://www.acmicpc.net/problem/1018
