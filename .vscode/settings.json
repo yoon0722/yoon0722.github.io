@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "exception": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp"
+    }
+}
