@@ -5,6 +5,8 @@
         "tuple": "cpp",
         "utility": "cpp",
         "vector": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "format": "cpp",
+        "unordered_map": "cpp"
     }
 }
