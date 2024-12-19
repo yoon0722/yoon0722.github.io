@@ -18,12 +18,11 @@ sidebar:
 ---
 
 ## Android SDK
-- Android 단말기와 연결하기 위해 Android SDK 필요
+- Android 단말기와 연결하기 위해선 Android SDK 필요
 - Android Studio를 설치하면 Android SDK도 함께 설치됨
 
 ## Android Studio
 - Android Studio는 공식적으로 지원되는 Android 개발 도구
 
 ### Android Studio 설치 및 환경설정
-- 설치방법은 해당 블로그를 참고했다.
 [참고 블로그] https://han-geom.tistory.com/8
