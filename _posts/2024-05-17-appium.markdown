@@ -20,28 +20,26 @@ sidebar:
 window 11
 
 ## Appium
-Appium은 다양한 플랫폼(모바일, 웹, 데스크톱 등)의 UI 자동화를 지원하는것을 목표로 한다.
-그쁀 아니라 다양한 언어(JS, Java, Python 등)로 작성된 자동화 코드를 지원하는 것도 목표로 한다.
-<br/>출처: https://appium.io/docs/en/2.4/intro/
-<br/>즉, Appium은 모바일 application의 자동화 테스트를 위한 도구이다.
+- Appium은 다양한 플랫폼(모바일, 웹, 데스크톱 등)의 UI 자동화를 지원하는것을 목표로 한다.
+- 그뿐 아니라 다양한 언어(JS, Java, Python 등)로 작성된 자동화 코드를 지원하는 것도 목표로 한다.
+  - 출처: https://appium.io/docs/en/2.4/intro/
+- 즉, Appium은 모바일 application의 자동화 테스트를 위한 도구이다.
 
 ### 설치방법
-Appium을 사용하려면 먼저 Node.js를 설치하고, npm을 통해 Appium을 설치해야 한다.
+- Appium을 사용하려면 먼저 Node.js를 설치하고, npm을 통해 Appium을 설치해야 한다.
 
 ### npm
 - Node Package Manager의 약자로, Node.js 프로젝트에서 사용되는 패키지(모듈)들을 설치하고 관리하는 도구이다.
 - Node.js 설치시 함께 제공된다.
 
 ### Node.js
-JavaScript 런타임 환경으로, 서버 측 JavaScript를 실행할 수 있게 해주는 플랫폼이다.
+- JavaScript 런타임 환경으로, 서버 측 JavaScript를 실행할 수 있게 해주는 플랫폼이다.
 
 ### UIautomator2
-UIAutomator의 단점을 보완하고 최신 Android 기능을 지원한다.
-특히 Appium을 사용한 모바일 테스트 자동화에서 많이 사용된다.
-Android SDK에 포함되어 있어 별도의 설치가 필요하지 않다.
+- UIAutomator의 단점을 보완하고 최신 Android 기능을 지원한다.
+- 특히 Appium을 사용한 모바일 테스트 자동화에서 많이 사용된다.
+- Android SDK에 포함되어 있어 별도의 설치가 필요하지 않다.
 
 ---
 [참고 블로그]
 https://han-geom.tistory.com/8
-
-[다음 안드로이드 스튜디오 설치 post 링크]
