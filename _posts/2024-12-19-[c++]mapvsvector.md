@@ -4,7 +4,7 @@ toc: true
 toc_label: "My Table of Contents"
 #toc_icon: "cog"
 layout: single
-title: "[C++] map vs vector<pair>"
+title: "[C++] map vs vector&lt;pair&gt;"
 date: "2024-12-19 00:00:00 +0900"
 last_modified_at: "2024-12-19 00:00:00 +0900"
 categories:
@@ -77,7 +77,7 @@ scores[102] = 80;
 cout << scores[101]; //출력: 90 
 ```
 
-## vector<pair>
+## vector&lt;pair&gt;
 ```c++
 #include <vector>
 ```
@@ -157,7 +157,7 @@ int main(){
 }
 ```
 
-## map vs vector<pair>
+## map vs vector&lt;pair&gt;
 
 |특징|map|vector<pair>|
 |---|---|---|
@@ -170,6 +170,6 @@ int main(){
 ## 정리
 - map
   - 키가 고유하며, 특정 키를 빠르게 검색하거나 값을 추가/갱신해야하는 경우 사용
-- vector<pair>
+- vector&lt;pair&gt;
   - 순서가 중요하거나, 정렬 기준이 자주 바뀌는 경우 사용
   - 키 값이 중복될 수 있는 경우
