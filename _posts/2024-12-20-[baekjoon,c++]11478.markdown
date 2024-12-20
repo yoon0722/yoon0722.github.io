@@ -1,0 +1,31 @@
+﻿---
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[Baekjoon/C++] 11478번 서로 다른 부분 문자열의 개수"
+date: "2024-12-20 00:00:00 +0900"
+last_modified_at: "2024-12-20 00:00:00 +0900"
+categories:
+  - Baekjoon
+tags:
+  - c++
+  - silver3
+author_profile: true
+sidebar:
+    nav: docs
+---
+ 
+## 문제 설명
+![problem_ex](/assets/img/11478.png)
+
+### 입출력 예
+![problem_ex](/assets/img/11478_ex.png)
+
+## 코드 구현
+
+## 공부한 내용
+
+---
+**출처:** 백준, https://www.acmicpc.net/problem/11478
