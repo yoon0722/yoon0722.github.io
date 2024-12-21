@@ -33,7 +33,7 @@ using namespace std;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    cin.tie(NULL);
+    cout.tie(NULL);
 
     int N=0;
     cin >> N;
@@ -92,7 +92,7 @@ using namespace std;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    cin.tie(NULL);
+    cout.tie(NULL);
 
     int N=0;
     cin >> N;
@@ -128,7 +128,7 @@ int main(){
 
 ## 공부한 내용
 ### unordered_map
-[[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]map,unordered_map %})
+[[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]mapvsunordered_map %})
 
 ### lower_bound
 - 특정값보다 작은 값을 개수를 구하는데 유용

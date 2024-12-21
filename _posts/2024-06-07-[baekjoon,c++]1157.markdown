@@ -81,7 +81,7 @@ int main(){
 - 평균 시간 복잡도는 O(1)이다.
 - 순서가 중요하지 않고, 빠른 검색과 삽입이 중요한 경우 적합하다.
 
-<br/>**더 자세한 설명:** [[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]map,unordered_map %})
+<br/>**더 자세한 설명:** [[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]mapvsunordered_map %})
 
 ### transform(v.begin(), v.end(), new_v.begin(), ::tolower/::toupper)
 - `<algorithm>`헤더에 정의되어 있다.

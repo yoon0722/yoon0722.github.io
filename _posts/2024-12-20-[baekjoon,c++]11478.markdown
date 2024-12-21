@@ -23,9 +23,74 @@ sidebar:
 ### 입출력 예
 ![problem_ex](/assets/img/11478_ex.png)
 
-## 코드 구현
+## 코드 구현 1
+```c++
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main(){
+
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    string S="";
+    cin >> S;
+
+    set<string> str;
+
+    for(int i=1; i<=S.size(); i++){
+        for(int j=0; j<=S.size()-1; j++){
+            str.insert(S.substr(j, i));
+        }
+    }
+    
+    int count=0;
+    for(auto s : str){
+        count++;
+    }
+
+    cout << count;
+
+    return 0;
+}
+```
+예제는 맞았는데 시간초과가 떴다.
+<br/>현재 문제에서는 정렬이 필요하지 않기 때문에 set대신 해시 기반인 unordered_set을 사용하여 시간복잡도를 줄이기로 했다.
+
+## 코드 구현 2
+```c++
+#include <iostream>
+#include <unordered_set>
+using namespace std;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    string S="";
+    cin >> S;
+
+    unordered_set<string> str;
+
+    for(int i=0; i<S.size(); i++){
+        string word="";
+        for(int j=i; j<S.size(); j++){
+            word+=S[j];
+            str.insert(word);
+        }
+    }
+
+    cout << str.size();
+
+    return 0;
+}
+```
 
 ## 공부한 내용
+[[C++] set vs unordered_set]({% post_url 2024-12-20-[c++]setvsunordered_set %})
 
 ---
 **출처:** 백준, https://www.acmicpc.net/problem/11478

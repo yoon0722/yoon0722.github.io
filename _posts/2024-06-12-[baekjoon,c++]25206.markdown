@@ -201,7 +201,7 @@ cout << grade << endl; //3.5
 ![ex1_result](/assets/img/25206_ex3_result.jpg)
 
 ## Review
-최근에 정리한 [[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]map,unordered_map %})을 사용해서 문제를 풀어봤다.
+최근에 정리한 [[C++] map vs unordered_map]({% post_url 2024-06-08-[c++]mapvsunordered_map %})을 사용해서 문제를 풀어봤다.
 
 ---
 **출처:** 백준, https://www.acmicpc.net/problem/25206

@@ -159,7 +159,7 @@ int main(){
 
 ## map vs vector&lt;pair&gt;
 
-|특징|map|vector<pair>|
+|특징|map|vector&lt;pair&gt|
 |---|---|---|
 |키의 중복 허용|불가|허용|
 |자동 정렬|자동정렬(키 기준)|정렬되지 않음(sort 사용)|
