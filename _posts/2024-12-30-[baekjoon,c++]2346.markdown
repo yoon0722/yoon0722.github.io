@@ -24,8 +24,61 @@ sidebar:
 ![problem_ex](/assets/img/2346_ex.png)
 
 ## 코드 구현 
+```c++
+#include <iostream>
+#include <deque>
+#include <vector>
+using namespace std;
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int N;
+    cin >> N;
+
+    deque<pair<int, int>> ball;
+    vector<int> ballResult;
+
+    for(int i=1; i<=N; i++){
+        int num;
+        cin >> num;
+        ball.emplace_back(i, num);
+    }
+
+    while(!ball.empty()){
+        pair<int, int> temp = ball.front(); 
+        ballResult.push_back(temp.first); //1번 풍선 저장
+        ball.pop_front();
+
+        if(temp.second>0){ //종이 숫자가 양수이면
+            for(int i=0; i<temp.second-1; i++){ //위에서 현재 풍선을 pop했으니 -1해준다
+                ball.push_back(ball.front()); //오른쪽으로 한칸씩 이동
+                ball.pop_front();
+            }
+        }
+        else if(temp.second<0){ //종이 숫자가 음수이면
+            for(int i=temp.second; i<0; i++){
+                ball.push_front(ball.back()); //왼쪽으로 한칸씩 이동
+                ball.pop_back();
+            }
+        }
+    }
+
+    for(int br : ballResult){
+        cout << br << " ";
+    }
+
+    return 0;
+}
+```
+- 오른쪽으로 이동:
+  - 덱의 맨 앞에 있는 원소를 맨 뒤로 보냄으로써 순차적으로 원소들이 오른쪽으로 이동하게끔 한다.
+- 왼쪽으로 이동:
+  - 덱의 맨 뒤에 있는 원소를 맨 앞으로 보냄으로써 순차적으로 원소들이 왼쪽으로 이동하게끔 한다.
 
 ## 공부한 내용
+### emplace_back
+[[C++] emplace_back vs push_back]({% post_url 2024-12-31-[c++]emplace_backvspush_back %})
 
 ---
 **출처:** 백준, https://www.acmicpc.net/problem/2346
