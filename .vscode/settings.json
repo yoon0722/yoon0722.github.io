@@ -9,6 +9,7 @@
         "format": "cpp",
         "unordered_map": "cpp",
         "queue": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "deque": "cpp"
     }
 }
