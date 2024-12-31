@@ -20,8 +20,7 @@ sidebar:
 ![problem_ex](/assets/img/stack.png)
 - **LIFO(Last In, First Out):** 가장 나중에 들어온 데이터가 가장 먼저 나오는 자료구조 방식
 - 뒤(위)에서만 추가/제거 가능
-
-### <메서드>
+### 메서드
 - **push():** 데이터를 스택에 추가
 - **pop():** 스택에서 데이터를 제거(가장 마지막에 추가된 데이터)
 - **top()/peek():** 스택의 가장 상단에 있는 데이터 확인
@@ -40,8 +39,7 @@ cout << s.top(); //출력: 2
 ![problem_ex](/assets/img/queue.png)
 - **FIFO(First In, First Out):** 가장 먼저 들어온 데이터가 가장 먼저 나오는 자료구조 방식
 - 앞에서 추가, 뒤에서 제거 가능
-
-### <메서드>
+### 메서드
 - **push()/enqueue():** 데이터를 큐에 추가
 - **pop()/dequeue():** 큐에서 데이터를 제거(가장 먼저 들어온 데이터)
 - **front():** 큐의 가장 앞에 있는 데이터 확인
@@ -62,8 +60,7 @@ cout << q.front(); //출력: 2
 ![problem_ex](/assets/img/deque_ex.png)
 - **Double Ended Queue:** 큐처럼 양쪽 끝에서 데이터를 추가하거나 제거할 수 있는 자료구조
 - 앞쪽과 뒤쪽에서 모두 데이터를 추가하거나 제거 가능
-
-### <메서드>
+### 메서드
 - **push_front():** 덱의 앞에 데이터 추가
 - **push_back():** 덱의 뒤에 데이터 추가
 - **pop_front():** 덱의 앞에서 데이터 제거
