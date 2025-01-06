@@ -74,11 +74,11 @@ cout << q.front(); //출력: 2
 
 ## deque
 ![problem_ex](/assets/img/deque.png)
-![problem_ex](/assets/img/deque_ex.png)
 
 ### 특징
 - **Double Ended Queue:** 큐처럼 양쪽 끝에서 데이터를 추가하거나 제거할 수 있는 자료구조
 - 앞쪽과 뒤쪽에서 모두 데이터를 추가하거나 제거 가능
+![problem_ex](/assets/img/deque_ex.png)
 
 ### 메서드
 - **push_front():** 덱의 앞에 데이터 추가
