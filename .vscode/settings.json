@@ -10,6 +10,8 @@
         "unordered_map": "cpp",
         "queue": "cpp",
         "iostream": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "stack": "cpp",
+        "xutility": "cpp"
     }
 }
