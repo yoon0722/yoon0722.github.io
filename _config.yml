@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "yoon0722"
 description              : "place where the world's priming water is poured"
-url                      : "https://yoon0722.github.io"
+url                      : "https://yoon0722.github.io/"
 baseurl                  : #"https://mmistakes.github.io"
 repository               : "yoon0722/yoon0722.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
