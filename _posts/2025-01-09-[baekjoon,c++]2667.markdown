@@ -101,5 +101,7 @@ int main(){
     return 0;
 }
 ```
+유사한 문제로 [1012번](https://www.acmicpc.net/problem/1012)이 있다.
+
 ---
 **출처:** 백준, https://www.acmicpc.net/problem/2667
