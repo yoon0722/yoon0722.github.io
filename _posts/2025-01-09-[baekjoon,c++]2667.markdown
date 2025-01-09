@@ -1,0 +1,105 @@
+﻿---
+classes: wide
+toc: true
+toc_label: "My Table of Contents"
+#toc_icon: "cog"
+layout: single
+title: "[Baekjoon/C++] 2667번 단지번호붙이기"
+date: "2025-01-09 00:00:00 +0900"
+last_modified_at: "2025-01-09 00:00:00 +0900"
+categories:
+  - Baekjoon
+tags:
+  - c++
+  - silver1
+author_profile: true
+sidebar:
+    nav: docs
+---
+ 
+## 문제 설명
+![problem_ex](/assets/img/2667.png)
+
+### 입출력 예
+![problem_ex](/assets/img/2667_ex.png)
+
+## 코드 구현 
+```c++
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <algorithm>
+using namespace std;
+
+int N;
+vector<vector<int>> map;
+vector<vector<bool>> visited;
+
+//상하좌우
+int dx[4]={-1, 1, 0, 0};
+int dy[4]={0, 0, -1, 1};
+
+int bfs(int x, int y){
+    queue<pair<int, int>> q;
+    q.emplace(x, y);
+    visited[x][y]=true;
+    int houseNum=1;
+
+    while(!q.empty()){
+        x = q.front().first;
+        y = q.front().second;
+        q.pop();
+
+        for(int i=0; i<4; i++){
+            int nx = x+dx[i];
+            int ny = y+dy[i];
+
+            if(nx>=0 && nx<N && ny>=0 && ny<N && map[nx][ny]==1 && !visited[nx][ny]){
+                q.emplace(nx, ny);
+                visited[nx][ny]=true;
+                houseNum++;
+            }
+        }
+    } 
+    return houseNum;  
+}
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    cin >> N;
+    map.resize(N, vector<int>(N));
+    visited.resize(N, vector<bool>(N, false));
+    vector<int> houses;
+    int town=0;
+
+    for(int i=0; i<N; i++){
+        string line;
+        cin >> line;
+        for(int j=0; j<N; j++){
+            map[i][j] = line[j]-'0'; //문자 정수로 변환
+        }
+    }
+
+    for(int i=0; i<N; i++){
+        for(int j=0; j<N; j++){
+            if(map[i][j]==1 && !visited[i][j]){
+                houses.push_back(bfs(i, j));
+                town++;
+            }
+        }
+    }
+
+    sort(houses.begin(), houses.end());
+
+    cout << town << "\n";
+    for(int h : houses){
+        cout << h << "\n";
+    }
+
+    return 0;
+}
+```
+---
+**출처:** 백준, https://www.acmicpc.net/problem/2667
